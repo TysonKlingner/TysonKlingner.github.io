@@ -25,6 +25,19 @@ header p {
     margin: 0;
 }
 
+a {
+    color: #4B2E83;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4B2E83;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 nav {
     margin-top: 30px;
 }
