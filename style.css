@@ -95,3 +95,31 @@ footer {
         width: 200px;
     }
 }
+
+.paper-links {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.paper-links details {
+    display: inline;
+}
+
+.paper-links summary {
+    display: inline;
+    cursor: pointer;
+    color: #174a7e;
+}
+
+.paper-links summary:hover {
+    text-decoration: underline;
+}
+
+.paper-links details[open] {
+    width: 100%;
+}
+
+.paper-links details p {
+    margin-top: 12px;
+}
