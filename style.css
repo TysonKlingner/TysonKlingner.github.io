@@ -112,3 +112,9 @@ footer {
 .paper-number {
     margin-right: 6px;
 }
+
+.teaching-note {
+    margin-top: -10px;
+    color: #555;
+    font-size: 16px;
+}
