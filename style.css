@@ -39,16 +39,6 @@ nav a:hover {
     color: #174a7e;
     text-decoration: underline;
 }
-/*
-a {
-    color: #174a7e;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
- */
 
 h2 {
     font-size: 27px;
@@ -117,4 +107,8 @@ footer {
 
 .paper-links details p {
     margin-top: 12px;
+}
+
+.paper-number {
+    margin-right: 6px;
 }
