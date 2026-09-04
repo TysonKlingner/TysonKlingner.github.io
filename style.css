@@ -103,21 +103,16 @@ footer {
 }
 
 .paper-links details {
-    display: inline;
+    display: inline-block;
 }
 
 .paper-links summary {
-    display: inline;
     cursor: pointer;
     color: #174a7e;
 }
 
 .paper-links summary:hover {
     text-decoration: underline;
-}
-
-.paper-links details[open] {
-    width: 100%;
 }
 
 .paper-links details p {
