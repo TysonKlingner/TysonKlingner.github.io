@@ -32,11 +32,12 @@ nav {
 nav a {
     margin-right: 25px;
     color: #444;
+    text-decoration: none;
 }
 
 nav a:hover {
     color: #174a7e;
-    text-decoration: none;
+    text-decoration: underline;
 }
 /*
 a {
