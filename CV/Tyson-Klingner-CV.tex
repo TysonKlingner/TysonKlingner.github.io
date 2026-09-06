@@ -1,0 +1,268 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.78in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.25em, itemsep=1pt, topsep=2pt}
+\renewcommand{\arraystretch}{1.05}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}\titlerule]
+
+\titlespacing*{\section}{0pt}{14pt}{7pt}
+
+% ---------- Reusable commands ----------
+\newcommand{\cvitem}[2]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    #1 & #2
+  \end{tabularx}
+}
+
+\newcommand{\cventry}[4]{%
+  \cvitem{\textbf{#1}}{#2}\\[-1pt]
+  \cvitem{#3}{#4}
+  \vspace{5pt}
+}
+
+\newcommand{\paper}[4]{%
+  \noindent #1. \textbf{#2}\\
+  #3\\
+  #4
+  \vspace{7pt}
+}
+
+\newcommand{\talk}[3]{%
+  \cvitem{\textit{#1}}{#3}\\[-1pt]
+  #2
+  \vspace{5pt}
+}
+
+\begin{document}
+
+% ============================================================
+% Header
+% ============================================================
+
+{\LARGE\bfseries Tyson Klingner}
+
+\vspace{4pt}
+
+University of Washington \hfill Seattle, WA\\
+\href{mailto:tysonk4@uw.edu}{tysonk4@uw.edu}
+\quad $\cdot$ \quad
+\href{https://tysonklingner.github.io/}{Website}
+\quad $\cdot$ \quad
+\href{https://orcid.org/0000-0001-5665-9419}{ORCID: 0000-0001-5665-9419}
+\quad $\cdot$ \quad
+\href{https://www.linkedin.com/in/tyson-klingner/}{LinkedIn}
+
+% ============================================================
+\section{Education}
+
+\cventry
+  {University of Washington}
+  {2023--present}
+  {Ph.D. in Mathematics}
+  {Seattle, WA}
+
+\textit{Advisors:} S\'andor Kov\'acs and Giovanni Inchiostro
+
+\vspace{6pt}
+
+\cventry
+  {The University of Adelaide}
+  {2021--2022}
+  {Master of Philosophy in Mathematics}
+  {Adelaide, Australia}
+
+\textit{Advisor:} David Baraglia
+
+\vspace{6pt}
+
+\cventry
+  {The University of Adelaide}
+  {2018--2020}
+  {Bachelor of Mathematical Sciences (Advanced)}
+  {Adelaide, Australia}
+
+%Graduated top in Pure Mathematics; GPA: 6.875/7.00.
+
+% ============================================================
+\section{Research Interests}
+
+Algebraic geometry, birational geometry, moduli spaces, and algebraic stacks.
+
+% ============================================================
+\section{Publications and Preprints}
+
+\paper
+  {[1]}
+  {Characterizing Contractions and Weighted Blowdowns}
+  {Soham Ghosh and Tyson Klingner}
+  {Preprint, 2026. \href{https://arxiv.org/abs/2609.04023}{arXiv:2609.04023}.}
+
+\paper
+  {[2]}
+  {Spectral data of special orthogonal Higgs bundles and Hecke modification}
+  {Tyson Klingner}
+  {\textit{The Quarterly Journal of Mathematics} \textbf{75} (2024), no.~4, 1529--1553.
+   \href{https://doi.org/10.1093/qmath/haae057}{doi:10.1093/qmath/haae057}.}
+
+\paper
+  {[3]}
+  {Evaluation of LLMs for Mathematical Formalization in Lean}
+  {Tyson Klingner, Drew Bladek, Escher Crawford, Bohao Chen, Ariel Fu, Kaira Nair,
+   Jarod Alper, Giovanni Inchiostro, and Vasily Ilin}
+  {Preprint, 2026. \href{https://arxiv.org/abs/2606.05632}{arXiv:2606.05632}.}
+
+% ============================================================
+\section{Teaching}
+
+\cvitem{\textbf{Grader}, Math 534}{Autumn 2026}
+\vspace{3pt}
+
+\cvitem{\textbf{Instructor}, Math 207}{Summer 2026}\\[-1pt]
+Lectured the course, prepared course materials, and wrote and administered the exams.
+\vspace{5pt}
+
+\cvitem{\textbf{Teaching Assistant}, Math 126}{Winter 2026}
+\vspace{3pt}
+
+\cvitem{\textbf{Teaching Assistant}, Math 125}{Autumn 2025}
+\vspace{3pt}
+
+\cvitem{\textbf{Lead Teaching Assistant}, Math 208}{Winter 2025}
+\vspace{3pt}
+
+\cvitem{\textbf{Teaching Assistant}, Math 125}{Autumn 2024}
+\vspace{3pt}
+
+\cvitem{\textbf{Teaching Assistant}, Math 125}{Summer 2024}
+\vspace{3pt}
+
+\cvitem{\textbf{Teaching Assistant}, Math 125}{Winter 2024}
+\vspace{3pt}
+
+\cvitem{\textbf{Teaching Assistant}, Math 125}{Autumn 2023}
+
+\vspace{7pt}
+\textbf{Additional teaching experience.}
+Tutoring and marking in mathematics at the University of Adelaide and related programs,
+including complex analysis, vector calculus, integration and analysis, differential equations,
+and introductory mathematics (2021--2023).
+
+% ============================================================
+\section{Mentoring}
+
+\cvitem{\textbf{Undergraduate Research Mentor}, UW Math AI Lab}{2026}\\[-1pt]
+Led a group of undergraduate researchers studying large language models for mathematical
+formalization in Lean; the project resulted in the preprint
+\textit{Evaluation of LLMs for Mathematical Formalization in Lean}.
+\vspace{7pt}
+
+\cvitem{\textbf{Mentor}, Washington Directed Reading Program}{Spring 2024}\\[-1pt]
+\textit{Exploring the Complex World}. Mentee: Brinda Moudgalya.\\
+Mentored an undergraduate reading project introducing complex analysis, including contour
+integration, Cauchy's theorems, and residue theory.
+
+% ============================================================
+\section{Talks}
+
+\talk
+  {Canonical Model of Surfaces}
+  {UW Student Algebraic Geometry Seminar}
+  {Spring 2026}
+
+\talk
+  {Surface Singularities}
+  {UW Student Algebraic Geometry Seminar}
+  {Winter 2026}
+
+\talk
+  {Uniformization of Stacky Curves}
+  {UW Student Algebraic Geometry Seminar}
+  {Autumn 2025}
+
+\talk
+  {Yau's Proof of the Calabi Conjecture}
+  {UW Student Differential Geometry Seminar}
+  {Winter 2025}
+
+\talk
+  {Eigenvalues and Much More}
+  {1-2-3 Seminar, University of Washington}
+  {Spring 2024}
+
+\talk
+  {Introduction to Complex Algebraic Geometry}
+  {UW Student Algebraic Geometry Seminar}
+  {Autumn 2023}
+
+\talk
+  {Langlands Duality in the Hitchin System}
+  {Australian Postgraduate Algebra Colloquium}
+  {June 2022}
+
+\talk
+  {Spectral Curve Correspondence}
+  {Geometry and Topology Squared Seminar, University of Sydney}
+  {May 2022}
+
+\talk
+  {Spectral data of \(L\)-twisted Higgs bundles and Langlands duality I and II.}
+  {AYAPS, Adelaide}
+  {March--April 2022}
+
+% ============================================================
+\section{Academic Service}
+
+\cvitem{\textbf{Organizer}, Deformation Theory Seminar, University of Washington}{Spring 2026}
+\vspace{4pt}
+
+\cvitem{\textbf{Organizer}, Student Differential Geometry Seminar, University of Washington}{2024--2025}
+
+% ============================================================
+\section{Awards and Funding}
+
+\cvitem{\textbf{Fulbright Australia Future Scholarship (Postgraduate)}}{2023--2028}
+\vspace{3pt}
+
+\cvitem{\textbf{University of Adelaide Research Scholarship}, Master of Philosophy}{2021--2022}
+\vspace{3pt}
+
+\cvitem{\textbf{Summer Research Project Scholarship}, University of Adelaide}{2020}
+\vspace{3pt}
+
+\cvitem{\textbf{JR Wilton Prize}, University of Adelaide}{2020}
+\vspace{3pt}
+
+\cvitem{\textbf{ES Barnes Prize}, University of Adelaide}{2020}
+\vspace{3pt}
+
+\cvitem{\textbf{David Murray Prize}, University of Adelaide}{2020}
+\vspace{3pt}
+
+\cvitem{\textbf{Dean's Recognition of Academic Excellence Award}, University of Adelaide}{2019, 2020}
+
+\vfill
+\begin{flushright}
+    \small\textit{Last updated September 2026}
+\end{flushright}
+
+\end{document}
